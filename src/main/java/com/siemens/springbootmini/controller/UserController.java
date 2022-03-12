@@ -1,6 +1,7 @@
 package com.siemens.springbootmini.controller;
 
-import com.siemens.springbootmini.dao.UserDto;
+import com.siemens.springbootmini.common.ResultDto;
+import com.siemens.springbootmini.dto.UserDto;
 import com.siemens.springbootmini.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -34,8 +35,10 @@ public class UserController {
 
     @ApiOperation("login interface 登陆接口")
     @RequestMapping(value = "/login",method = RequestMethod.POST)
-    public String login(@RequestBody  UserDto userDto){
+    public ResultDto<UserDto> login(@RequestBody  UserDto userDto){
         String result = userService.login(userDto);
-        return "success" + result +"sdl="+sdl;
+       // return "success" + result +"sdl="+sdl;
+
+        return ResultDto.success("success" + result +"sdl="+sdl,userDto);
     }
 }

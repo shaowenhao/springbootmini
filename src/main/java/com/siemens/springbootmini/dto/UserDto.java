@@ -1,4 +1,4 @@
-package com.siemens.springbootmini.dao;
+package com.siemens.springbootmini.dto;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

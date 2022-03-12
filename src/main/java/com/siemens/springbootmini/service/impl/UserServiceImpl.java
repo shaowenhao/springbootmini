@@ -1,8 +1,7 @@
 package com.siemens.springbootmini.service.impl;
 
-import com.siemens.springbootmini.dao.UserDto;
+import com.siemens.springbootmini.dto.UserDto;
 import com.siemens.springbootmini.service.UserService;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 /**

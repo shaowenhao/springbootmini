@@ -1,6 +1,6 @@
 package com.siemens.springbootmini.service;
 
-import com.siemens.springbootmini.dao.UserDto;
+import com.siemens.springbootmini.dto.UserDto;
 
 public interface UserService {
     public String login(UserDto userDto);

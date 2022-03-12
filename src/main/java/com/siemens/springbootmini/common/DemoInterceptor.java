@@ -20,7 +20,7 @@ public class DemoInterceptor implements HandlerInterceptor {
         //拦截器 false 不会放行 但是WebMvcConfig配置了 忽略了login地址 所以还是可以访问
         log.info("==prehandle==");
         log.info(request.getRequestURI());
-        return false;
+        return true;
     }
 
     @Override
